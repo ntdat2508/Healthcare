@@ -83,7 +83,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Mật khẩu"
-        android:inputType="text"
+        android:inputType="text|textPassword"
         android:paddingBottom="10dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"

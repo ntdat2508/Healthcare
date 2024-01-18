@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Date;
+
 public class Home extends AppCompatActivity {
 
     @Override
@@ -19,7 +21,7 @@ public class Home extends AppCompatActivity {
 
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username","").toString();
-        Toast.makeText(getApplicationContext(), "Xin chào"+username, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Xin chào "+username, Toast.LENGTH_SHORT).show();
 
         CardView cardExit = findViewById(R.id.cardExit);
 

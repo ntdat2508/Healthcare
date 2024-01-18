@@ -41,8 +41,8 @@ public class BuyMedicBook extends AppCompatActivity {
                         contact.getText().toString(),
                         Integer.parseInt(pincode.getText().toString()),
                         date.toString(),"",
-                        Float.parseFloat(price[1].toString()), "thuốc");
-                db.removeCart(username,"thuốc");
+                        Float.parseFloat(price[1].toString()), "medicine");
+                db.removeCart(username,"medicine");
                 Toast.makeText(getApplicationContext(), "Đơn hàng được đặt thành công!", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(BuyMedicBook.this, Home.class));
             }

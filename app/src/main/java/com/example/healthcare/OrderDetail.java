@@ -10,8 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 public class OrderDetail extends AppCompatActivity {
@@ -41,9 +45,11 @@ public class OrderDetail extends AppCompatActivity {
         String username = sharedPreferences.getString("username", "").toString();
         ArrayList dbData = db.getOrderData(username);
 
+        Date today = new Date();
+
         order_details = new String[dbData.size()][];
         for (int i=0; i<order_details.length; i++) {
-            order_details[i] = new String[5];
+            order_details[i] = new String[6];
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
             order_details[i][0] = strData[0];
@@ -55,6 +61,16 @@ public class OrderDetail extends AppCompatActivity {
             }
             order_details[i][2] = "Giá: " + strData[6];
             order_details[i][4] = strData[7];
+
+            order_details[i][5] = strData[4];
+            try {
+                Date dateInOrder = new SimpleDateFormat("dd-MM-YYYY").parse(order_details[i][5]);
+                if (today.equals(dateInOrder)) {
+                    Toast.makeText(getApplicationContext(), "Bạn có lịch hẹn ngày hôm nay", Toast.LENGTH_SHORT).show();
+                }
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
         }
 
         list = new ArrayList();

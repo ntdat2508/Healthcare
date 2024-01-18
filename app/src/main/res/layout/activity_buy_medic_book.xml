@@ -111,7 +111,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Số điện thoại"
-        android:inputType="text|textPassword"
+        android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
