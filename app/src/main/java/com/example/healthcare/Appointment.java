@@ -88,10 +88,10 @@ public class Appointment extends AppCompatActivity {
                 SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedPreferences.getString("username", "").toString();
                 if (db.checkAppointmentExists(username, title + " => " + fullname, address, contact, dateButton.getText().toString(), timeButton.getText().toString())==1) {
-                    Toast.makeText(getApplicationContext(), "Appointment already booked", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Lịch hẹn đã tồn tại", Toast.LENGTH_LONG).show();
                 } else {
-                    db.addOrder(username, title + " => " + fullname, address, contact, 0, dateButton.getText().toString(), timeButton.getText().toString(), Float.parseFloat(fee), "appointment");
-                    Toast.makeText(getApplicationContext(), "Your appointment is done successfully", Toast.LENGTH_LONG).show();
+                    db.addOrder(username, title + " => " + fullname, address, contact, 0, dateButton.getText().toString(), timeButton.getText().toString(), Float.parseFloat(fee), "lịch hẹn");
+                    Toast.makeText(getApplicationContext(), "Lịch hẹn của bạn đã được đặt thành công!", Toast.LENGTH_LONG).show();
                     startActivity(new Intent(Appointment.this, Home.class));
                 }
             }
@@ -113,7 +113,7 @@ public class Appointment extends AppCompatActivity {
 
         int style = AlertDialog.THEME_HOLO_DARK;
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
-        datePickerDialog.getDatePicker().setMinDate(cal.getTimeInMillis()+8640000);
+        datePickerDialog.getDatePicker().setMinDate(cal.getTimeInMillis()+86400000);
     }
 
     private void initTimePicker(){

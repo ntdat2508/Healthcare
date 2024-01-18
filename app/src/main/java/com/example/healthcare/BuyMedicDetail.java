@@ -31,7 +31,7 @@ public class BuyMedicDetail extends AppCompatActivity {
         Intent intent = getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetail.setText(intent.getStringExtra("text2"));
-        tvTotalCost.setText("Total Cost: "+ intent.getStringExtra("text3")+"/-");
+        tvTotalCost.setText("Tổng tiền: "+ intent.getStringExtra("text3")+"vnđ/-");
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,10 +51,10 @@ public class BuyMedicDetail extends AppCompatActivity {
                 DBHelper db = new DBHelper(getApplicationContext(), "healthcare", null, 1);
 
                 if (db.checkCart(username,product)==1) {
-                    Toast.makeText(getApplicationContext(), "Product already added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Sản phẩm đã tồn tại trong giỏ hàng", Toast.LENGTH_SHORT).show();
                 } else {
                     db.addCart(username, product, price, "medicine");
-                    Toast.makeText(getApplicationContext(), "Record inserted to cart", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Thêm sản phẩm vào giỏ hàng thành công!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BuyMedicDetail.this, BuyMedic.class));
                 }
             }

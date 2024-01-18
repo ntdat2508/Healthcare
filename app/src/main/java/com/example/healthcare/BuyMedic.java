@@ -15,36 +15,36 @@ import java.util.HashMap;
 
 public class BuyMedic extends AppCompatActivity {
     private String[][] packages = {
-            {"Uprise-D3 1000IU Capsule", "", "", "", "50"},
-            {"HealthVit Chromium Picolinate 200mcg Capsule", "", "", "", "305"},
-            {"Vitamin B Complex Capsules", "", "", "", "448"},
-            {"Inlife Vitamin E Wheat Germ Oil Capsule", "", "", "", "539"},
-            {"Dolo 650 Tablet", "", "", "", "30"},
-            {"Crocin 650 Advance Tablet", "", "", "", "50"},
-            {"Strepsils Medicated Lozenges for Sore Throat", "", "", "", "40"},
-            {"Tata 1mg Calcium + Vitamin D3", "", "", "", "30"},
-            {"Feronia -XT Tablet", "", "", "", "130"},
+            {"Uprise-D3 1000IU Capsule", "", "", "", "50000"},
+            {"HealthVit Chromium Picolinate 200mcg Capsule", "", "", "", "305000"},
+            {"Vitamin B Complex Capsules", "", "", "", "448000"},
+            {"Inlife Vitamin E Wheat Germ Oil Capsule", "", "", "", "539000"},
+            {"Dolo 650 Tablet", "", "", "", "30000"},
+            {"Crocin 650 Advance Tablet", "", "", "", "50000"},
+            {"Strepsils Medicated Lozenges for Sore Throat", "", "", "", "40000"},
+            {"Tata 1mg Calcium + Vitamin D3", "", "", "", "30000"},
+            {"Feronia -XT Tablet", "", "", "", "130000"},
     };
 
     private String[] package_details = {
-            "Building and keeping the bones & teeth strong\n" +
-                    "Educing Fatigue/Stress and muscular pains\n" +
-                    "Boosting immunity and increasing resitance against infection",
-            "Chromium is an essential trace mineral that plays an important role in helping insulin regulation",
-            "Provides relief from vitamin B deficiencies\n" +
-                    "Helps in formation of red blood cells\n" +
-                    "Maintains healthy nervous system",
-            "It promotes health as well as skin benefit\n" +
-                    "It helps reduce skin blemish and pigmentation\n" +
-                    "it act as safeguard the skin from the harsh UVA and UVB sun rays",
-            "Dolo 650 Tablet helps relieve pain and fever by blocking the release of certain chemical messeage",
-            "Helps relieve fever and bring down a high temperature\n" +
-                    "Sui table for people with a heart condition or high blood pressure",
-            "Relieves the symptoms of a bacterial throat infection and soothes the recovery process\n" +
-                    "Provides a warm and comforting feeling during sore throat",
-            "Reduces the risk of calcium deficiency, Rickets and Osteoporosis\n" +
-                    "Promotes mobility and flexibility of joints",
-            "Helps to reduce the iron deficiency due to chronic blood loss or low intake of iron"
+            "Xây dựng và giữ cho xương và răng chắc khỏe\n" +
+                    "Giảm mệt mỏi/Căng thẳng và đau cơ\n" +
+                    "Tăng cường khả năng miễn dịch và tăng khả năng phục hồi chống lại nhiễm trùng",
+            "Chromium là một khoáng chất vi lượng thiết yếu đóng vai trò quan trọng trong việc giúp điều hòa insulin",
+            "Cung cấp sự giảm bớt sự thiếu hụt vitamin B\n" +
+                    "Giúp hình thành hồng cầu\n" +
+                    "Duy trì hệ thần kinh khỏe mạnh",
+            "Nó tăng cường sức khỏe cũng như lợi ích cho làn da\n" +
+                    "Nó giúp giảm vết thâm và sắc tố da\n" +
+                    "nó có tác dụng bảo vệ da khỏi tia nắng mặt trời UVA và UVB khắc nghiệt",
+            "Dolo 650 Tablet giúp giảm đau và hạ sốt bằng cách ngăn chặn sự giải phóng một số thông điệp hóa học",
+            "Giúp hạ sốt và hạ nhiệt độ cao\n" +
+                    "Bàn phù hợp cho người bị bệnh tim hoặc cao huyết áp",
+            "Làm giảm các triệu chứng nhiễm trùng cổ họng do vi khuẩn và làm dịu quá trình phục hồi\n" +
+                    "Mang lại cảm giác ấm áp và dễ chịu khi bị đau họng",
+            "Giảm nguy cơ thiếu canxi, còi xương và loãng xương\n" +
+                    "Thúc đẩy khả năng vận động và tính linh hoạt của khớp",
+            "Giúp giảm tình trạng thiếu sắt do mất máu mãn tính hoặc do lượng sắt hấp thụ thấp"
     };
 
     HashMap<String, String> item;
@@ -83,7 +83,7 @@ public class BuyMedic extends AppCompatActivity {
             item.put("line2", packages[i][1]);
             item.put("line3", packages[i][2]);
             item.put("line4", packages[i][3]);
-            item.put("line5", "Total cost:" + packages[i][4] + "/-");
+            item.put("line5", "Tổng tiền:" + packages[i][4] + "vnđ/-");
             list.add(item);
         }
 

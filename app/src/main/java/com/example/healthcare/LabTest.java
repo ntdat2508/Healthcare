@@ -16,31 +16,31 @@ import java.util.HashMap;
 public class LabTest extends AppCompatActivity {
 
     private String[][] packages = {
-            {"Package 1 : Full Body Checkup", "", "", "", "999"},
-            {"Package 2 : Blood Glucose Fasting", "", "", "", "299"},
-            {"Package 3 : COVID-19 Antibody - IgG", "", "", "", "899"},
-            {"Package 4 : Thyroid Check", "", "", "", "499"},
-            {"Package 5 : Immunity Check", "", "", "", "699"}
+            {"Gói xét nghiệm 1 : Kiểm tra toàn thân", "", "", "", "999000"},
+            {"Gói xét nghiệm 2 : Nhịn ăn đường huyết", "", "", "", "299000"},
+            {"Gói xét nghiệm 3 : Kháng thể COVID-19 - IgG", "", "", "", "899000"},
+            {"Gói xét nghiệm 4 : Kiểm tra tuyến giáp", "", "", "", "499000"},
+            {"Gói xét nghiệm 5 : Kiểm tra miễn dịch", "", "", "", "699000"}
     };
 
     private String[] package_details = {
-            "Blood Glucose Fasting\n" +
-                    "Complete Hemogram\n" +
+            "Nhịn ăn đường huyết\n" +
+                    "Huyết đồ hoàn chỉnh\n" +
                     "HbA1c\n" +
-                    "Kidney Function Test\n" +
-                    "LDH Lactate Dehydrogenase, Serum\n" +
-                    "Lipid Profile\n" +
-                    "Liver Function Test",
-            "Blood Glucose Fasting",
-            "COVID_19 Antibody - IgG",
-            "Thyroid Profile-Total (T3, T4 & TSH Ultra-sensitive)",
-            "Complete Hemogram\n" +
-                    "CRP (C Reactive Protein) Quantitative, Serum\n" +
-                    "Iron Studies\n" +
-                    "Kidney Function Test\n" +
+                    "Kiểm tra chức năng thận\n" +
+                    "Xét nghiệm đo hoạt độ LDH, Huyết thanh\n" +
+                    "Hồ sơ lipid\n" +
+                    "Kiểm tra chức năng gan",
+            "Nhịn ăn đường huyết",
+            "Kháng thể COVID_19 - IgG",
+            "Tổng hồ sơ tuyến giáp (T3, T4 & TSH siêu nhạy cảm)",
+            "Huyết đồ hoàn chỉnh\n" +
+                    "CRP (C Protein phản ứng) Định lượng, Huyết thanh\n" +
+                    "Nghiên cứu về sắt\n" +
+                    "Kiểm tra chức năng thận\n" +
                     "Vitamin D Total-25 Hydroxy\n" +
-                    "Liver Function Test\n" +
-                    "Lipid Profile"
+                    "Kiểm tra chức năng gan\n" +
+                    "Hồ sơ lipid"
     };
 
     HashMap<String, String> item;
@@ -72,7 +72,7 @@ public class LabTest extends AppCompatActivity {
             item.put( "line2", packages[i][1]);
             item.put( "line3", packages[i][2]);
             item.put( "line4", packages[i][3]);
-            item.put( "line5", "Total Cost:" + packages[i][4] + "/-");
+            item.put( "line5", "Tổng tiền:" + packages[i][4] + "vnđ/-");
             list.add(item);
         }
 

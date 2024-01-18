@@ -34,7 +34,7 @@ public class LabTestDetail extends AppCompatActivity {
         Intent intent = getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));
-        tvTotalCost.setText("Total Cost : "+ intent.getStringExtra("text3")+"/-");
+        tvTotalCost.setText("Tổng tiền: "+ intent.getStringExtra("text3")+"vnđ/-");
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,10 +54,10 @@ public class LabTestDetail extends AppCompatActivity {
                 DBHelper db = new DBHelper(getApplicationContext(), "healthcare", null, 1);
 
                 if (db.checkCart(username,product)==1) {
-                    Toast.makeText(getApplicationContext(), "Product already added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Sản phẩm đã tồn tại trong giỏ hàng", Toast.LENGTH_SHORT).show();
                 } else {
                     db.addCart(username, product, price, "lab");
-                    Toast.makeText(getApplicationContext(), "Record inserted to cart", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Đã thêm vào giỏ hàng", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LabTestDetail.this, LabTest.class));
                 }
             }

@@ -43,9 +43,9 @@ public class LabTestBook extends AppCompatActivity {
                         Integer.parseInt(pincode.getText().toString()),
                         date.toString(),
                         time.toString(),
-                        Float.parseFloat(price[1].toString()), "lab");
-                db.removeCart(username,"lab");
-                Toast.makeText(getApplicationContext(), "Your booking is done successfully", Toast.LENGTH_LONG).show();
+                        Float.parseFloat(price[1].toString()), "gói");
+                db.removeCart(username,"gói");
+                Toast.makeText(getApplicationContext(), "Bạn đã đặt hàng thành công!", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(LabTestBook.this, Home.class));
             }
         });

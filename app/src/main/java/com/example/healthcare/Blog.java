@@ -15,11 +15,11 @@ import java.util.HashMap;
 
 public class Blog extends AppCompatActivity {
     private String[][] health_details = {
-            {"Walking Daily", "", "", "", "Click more details"},
-            {"Home care of COVID-19", "", "", "", "Click more details"},
-            {"Stop Smoking", "", "", "", "Click more details"},
-            {"menstrual cramps", "", "", "", "Click more details"},
-            {"Healthy Gut", "", "", "", "Click more details"}
+            {"Đi bộ hàng ngày", "", "", "", "Thông tin chi tiết"},
+            {"Chăm sóc tại nhà mùa dịch COVID-19", "", "", "", "Thông tin chi tiết"},
+            {"Bỏ thuốc lá", "", "", "", "Thông tin chi tiết"},
+            {"Đau bụng kinh", "", "", "", "Thông tin chi tiết"},
+            {"Đường ruột khỏe mạnh", "", "", "", "Thông tin chi tiết"}
     };
     private int[] images = {
             R.drawable.health1,

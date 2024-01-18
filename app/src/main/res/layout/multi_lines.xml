@@ -31,25 +31,25 @@
 
         <TextView
             android:id="@+id/line_c"
-            android:layout_width="0dp"
-            android:layout_weight="0.20"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.20"
             android:text="TextView"
             android:textColor="#ffff66"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/line_d"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             android:text="TextView"
             android:textColor="#ffff66"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/line_e"
-            android:layout_width="122dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="TextView"

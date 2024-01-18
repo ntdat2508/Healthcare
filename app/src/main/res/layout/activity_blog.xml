@@ -11,7 +11,7 @@
         android:id="@+id/textViewHAtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Health Articles"
+        android:text="Bài viết về sức khoẻ"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -25,14 +25,14 @@
         android:id="@+id/textView_logo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Healthcare"
+        android:text="Ứng dụng chăm sóc sức khoẻ"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
 
     <ListView
@@ -51,10 +51,12 @@
         android:id="@+id/btnHABack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BACK"
+        android:layout_marginTop="10dp"
+        android:text="Quay lại"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.69" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewHA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

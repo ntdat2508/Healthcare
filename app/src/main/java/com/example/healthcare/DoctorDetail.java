@@ -17,43 +17,43 @@ import java.util.HashMap;
 public class DoctorDetail extends AppCompatActivity {
     private String[][] doctor_detail1 =
             {
-                    {"Doctor Name : Nguyen Van A", "Hospital Address : Ha Noi", "Exp : 5yrs", "Mobile No : 0123456789", "600"},
-                    {"Doctor Name : Nguyen Van B", "Hospital Address : Hoa Binh", "Exp : 3yrs", "Mobile No : 0123456789", "900"},
-                    {"Doctor Name : Nguyen Van C", "Hospital Address : Hung Yen", "Exp : 2yrs", "Mobile No : 0123456789", "300"},
-                    {"Doctor Name : Nguyen Van D", "Hospital Address : Thai Binh", "Exp : 6yrs", "Mobile No : 0123456789", "500"},
-                    {"Doctor Name : Nguyen Van E", "Hospital Address : Ha Noi", "Exp : 7yrs", "Mobile No : 0123456789", "800"},
+                    {"Tên bác sĩ : Nguyễn Văn A", "Địa chỉ : Hà Nội", "Kinh nghiệm : 5 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn B", "Địa chỉ : Hoà Bình ", "Kinh nghiệm : 3 năm", "SĐT: 0123456789", "400000"},
+                    {"Tên bác sĩ : Nguyễn Văn C", "Địa chỉ : Hưng Yên", "Kinh nghiệm : 2 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn D", "Địa chỉ : Thái Bình", "Kinh nghiệm : 6 năm", "SĐT: 0123456789", "500000"},
+                    {"Tên bác sĩ : Nguyễn Văn E", "Địa chỉ : Hà Nội", "Kinh nghiệm : 7 năm", "SĐT: 0123456789", "300000"},
             };
     private String[][] doctor_detail2 =
             {
-                    {"Doctor Name : Nguyen Van A", "Hospital Address : Ha Noi", "Exp : 5yrs", "Mobile No : 0123456789", "600"},
-                    {"Doctor Name : Nguyen Van B", "Hospital Address : Hoa Binh", "Exp : 3yrs", "Mobile No : 0123456789", "900"},
-                    {"Doctor Name : Nguyen Van C", "Hospital Address : Hung Yen", "Exp : 2yrs", "Mobile No : 0123456789", "300"},
-                    {"Doctor Name : Nguyen Van D", "Hospital Address : Thai Binh", "Exp : 6yrs", "Mobile No : 0123456789", "500"},
-                    {"Doctor Name : Nguyen Van E", "Hospital Address : Ha Noi", "Exp : 7yrs", "Mobile No : 0123456789", "800"},
+                    {"Tên bác sĩ : Nguyễn Văn A", "Địa chỉ : Hà Nội", "Kinh nghiệm : 5 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn B", "Địa chỉ : Hoà Bình ", "Kinh nghiệm : 3 năm", "SĐT: 0123456789", "400000"},
+                    {"Tên bác sĩ : Nguyễn Văn C", "Địa chỉ : Hưng Yên", "Kinh nghiệm : 2 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn D", "Địa chỉ : Thái Bình", "Kinh nghiệm : 6 năm", "SĐT: 0123456789", "500000"},
+                    {"Tên bác sĩ : Nguyễn Văn E", "Địa chỉ : Hà Nội", "Kinh nghiệm : 7 năm", "SĐT: 0123456789", "300000"},
             };
     private String[][] doctor_detail3 =
             {
-                    {"Doctor Name : Nguyen Van A", "Hospital Address : Ha Noi", "Exp : 5yrs", "Mobile No : 0123456789", "600"},
-                    {"Doctor Name : Nguyen Van B", "Hospital Address : Hoa Binh", "Exp : 3yrs", "Mobile No : 0123456789", "900"},
-                    {"Doctor Name : Nguyen Van C", "Hospital Address : Hung Yen", "Exp : 2yrs", "Mobile No : 0123456789", "300"},
-                    {"Doctor Name : Nguyen Van D", "Hospital Address : Thai Binh", "Exp : 6yrs", "Mobile No : 0123456789", "500"},
-                    {"Doctor Name : Nguyen Van E", "Hospital Address : Ha Noi", "Exp : 7yrs", "Mobile No : 0123456789", "800"},
+                    {"Tên bác sĩ : Nguyễn Văn A", "Địa chỉ : Hà Nội", "Kinh nghiệm : 5 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn B", "Địa chỉ : Hoà Bình ", "Kinh nghiệm : 3 năm", "SĐT: 0123456789", "400000"},
+                    {"Tên bác sĩ : Nguyễn Văn C", "Địa chỉ : Hưng Yên", "Kinh nghiệm : 2 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn D", "Địa chỉ : Thái Bình", "Kinh nghiệm : 6 năm", "SĐT: 0123456789", "500000"},
+                    {"Tên bác sĩ : Nguyễn Văn E", "Địa chỉ : Hà Nội", "Kinh nghiệm : 7 năm", "SĐT: 0123456789", "300000"},
             };
     private String[][] doctor_detail4 =
             {
-                    {"Doctor Name : Nguyen Van A", "Hospital Address : Ha Noi", "Exp : 5yrs", "Mobile No : 0123456789", "600"},
-                    {"Doctor Name : Nguyen Van B", "Hospital Address : Hoa Binh", "Exp : 3yrs", "Mobile No : 0123456789", "900"},
-                    {"Doctor Name : Nguyen Van C", "Hospital Address : Hung Yen", "Exp : 2yrs", "Mobile No : 0123456789", "300"},
-                    {"Doctor Name : Nguyen Van D", "Hospital Address : Thai Binh", "Exp : 6yrs", "Mobile No : 0123456789", "500"},
-                    {"Doctor Name : Nguyen Van E", "Hospital Address : Ha Noi", "Exp : 7yrs", "Mobile No : 0123456789", "800"},
+                    {"Tên bác sĩ : Nguyễn Văn A", "Địa chỉ : Hà Nội", "Kinh nghiệm : 5 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn B", "Địa chỉ : Hoà Bình ", "Kinh nghiệm : 3 năm", "SĐT: 0123456789", "400000"},
+                    {"Tên bác sĩ : Nguyễn Văn C", "Địa chỉ : Hưng Yên", "Kinh nghiệm : 2 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn D", "Địa chỉ : Thái Bình", "Kinh nghiệm : 6 năm", "SĐT: 0123456789", "500000"},
+                    {"Tên bác sĩ : Nguyễn Văn E", "Địa chỉ : Hà Nội", "Kinh nghiệm : 7 năm", "SĐT: 0123456789", "300000"},
             };
     private String[][] doctor_detail5 =
             {
-                    {"Doctor Name : Nguyen Van A", "Hospital Address : Ha Noi", "Exp : 5yrs", "Mobile No : 0123456789", "600"},
-                    {"Doctor Name : Nguyen Van B", "Hospital Address : Hoa Binh", "Exp : 3yrs", "Mobile No : 0123456789", "900"},
-                    {"Doctor Name : Nguyen Van C", "Hospital Address : Hung Yen", "Exp : 2yrs", "Mobile No : 0123456789", "300"},
-                    {"Doctor Name : Nguyen Van D", "Hospital Address : Thai Binh", "Exp : 6yrs", "Mobile No : 0123456789", "500"},
-                    {"Doctor Name : Nguyen Van E", "Hospital Address : Ha Noi", "Exp : 7yrs", "Mobile No : 0123456789", "800"},
+                    {"Tên bác sĩ : Nguyễn Văn A", "Địa chỉ : Hà Nội", "Kinh nghiệm : 5 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn B", "Địa chỉ : Hoà Bình ", "Kinh nghiệm : 3 năm", "SĐT: 0123456789", "400000"},
+                    {"Tên bác sĩ : Nguyễn Văn C", "Địa chỉ : Hưng Yên", "Kinh nghiệm : 2 năm", "SĐT: 0123456789", "200000"},
+                    {"Tên bác sĩ : Nguyễn Văn D", "Địa chỉ : Thái Bình", "Kinh nghiệm : 6 năm", "SĐT: 0123456789", "500000"},
+                    {"Tên bác sĩ : Nguyễn Văn E", "Địa chỉ : Hà Nội", "Kinh nghiệm : 7 năm", "SĐT: 0123456789", "300000"},
             };
     TextView DDTitle;
     Button btnBack;
@@ -99,7 +99,7 @@ public class DoctorDetail extends AppCompatActivity {
             item.put( "line2", doctor_detail[i][1]);
             item.put( "line3", doctor_detail[i][2]);
             item.put( "line4", doctor_detail[i][3]);
-            item.put( "line5", "Giá:" + doctor_detail[i][4] + "/-");
+            item.put( "line5", "Giá:" + doctor_detail[i][4] + "vnđ/-");
             list.add(item);
         }
 
